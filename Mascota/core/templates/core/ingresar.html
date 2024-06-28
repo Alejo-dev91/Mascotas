@@ -1,0 +1,50 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+    <br>
+    <br>
+    <br>
+    <section id="contact-page">
+        <div class="container">
+            <br>
+            <div class="row contact-wrap">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="sendmessage">Your message</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label>Nombre de usuario</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Usuario" data-rule="minlen:4"
+                             data-msg="Por favor ingrese al menos 4 caracteres"/>
+                             <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label >Contraseña</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Password" data-rule="email"
+                            data-msg="Porfavor ingrese un email valido"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div><button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+                            <a href="/registro_u/"><button type="button" class="btn btn-primary btn-lg">Resgistrarse</button></a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Mascotas</title> 
+</head>
+<body>
+  {%block body %}
+  <div class="container">
+    <div class="row">
+      <div class="slider">
+        <div class="img-responsive">
+          <ul class="bxslider">
+            <li><img src='{% static "core/img/36.jpg"%}' alt="" width="100%" height="100%"/></li>
+            <li><img src='{% static "core/img/35.jpg"%}' alt="" width="100%" height="100%"/></li>
+            <li><img src='{% static "core/img/34.jpg"%}' alt="" width="100%" height="100%"/></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="text-center">
+          <h2>Porque tener una mascota de compañia?</h2>
+          <p>Tener una mascota brinda compañía, reduce el estrés, fomenta la responsabilidad y aporta amor incondicional y alegría.</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
+            <h4>Belleza</h4>
+            <div class="icon">
+              <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+            </div>
+            <p>La peluqueria canina tiene como ifnalidad la preservacion de la salud de tu mascota especialmente en la higiene
+              y la estetica
+            </p>
+            <div class="ficon">
+              <a href="/services/" class="btn btn-default" role="button">Leer mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.0s">
+            <h4>Productos</h4>
+            <div class="icon">
+              <i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>
+            </div>
+            <p>Venta de alimentos, accesorios y linea de aseo, mascotas ornamentales: Son aquellas 
+              que por sus cualidades esteticas se utilizan para aodrnar el entorno, mas inmediato o lugares comunes
+              que por diversos motivos son deocrados, como peces
+            </p>
+            <div class="ficon">
+              <a href="/portfolio/" class="btn btn-default" role="button">Leer mas</a>
+            </div>
+          </div>
+        </div>
+
+ 
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="text-center">
+          <h2>Productos</h2>
+          <p>Manejamos las mejores marcas de los productos ideales para el bienestar de tu mascota<br>
+          </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="grid">
+      <figure class="effect-zoe">
+        <img src='{% static "core/img/25.jpg"%}' alt="img25" />
+        <figcaption>
+          <h2>Peces <span>Ornamentales</span></h2>
+          <p class="icon-links">
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-eye"></span></a>
+            <a href="#"><span class="icon-paper-clip"></span></a>
+          </p>
+          <p class="description">Ofrecemos peces ornamentales pequeños, peceras y la decoracion para su habitat.</p>
+        </figcaption>
+      </figure>
+      <figure class="effect-zoe">
+        <img src='{% static "core/img/26.jpg"%}' alt="img26" />
+        <figcaption>
+          <h2>Belleza<span>Canina</span></h2>
+          <p class="icon-links">
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-eye"></span></a>
+            <a href="#"><span class="icon-paper-clip"></span></a>
+          </p>
+          <p class="description">Ofrecemos el servicio de baño, peluqueria, arreglo de uñas y desparasitación</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="grid">
+      <figure class="effect-zoe">
+        <img src='{% static "core/img/28.jpg"%}' alt="img28" />
+        <figcaption>
+          <h2>Juguetes y<span> Accesorios</span></h2>
+          <p class="icon-links">
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-eye"></span></a>
+            <a href="#"><span class="icon-paper-clip"></span></a>
+          </p>
+          <p class="description">Juguetes de alta calidad especialmente diseñados para todo tipo de mascota.</p>
+        </figcaption>
+      </figure>
+      <figure class="effect-zoe">
+        <img src='{% static "core/img/30.jpg"%}' alt="img30" />
+        <figcaption>
+          <h2>Snacks y<span> Concentrados</span></h2>
+          <p class="icon-links">
+            <a href="#"><span class="icon-heart"></span></a>
+            <a href="#"><span class="icon-eye"></span></a>
+            <a href="#"><span class="icon-paper-clip"></span></a>
+          </p>
+          <p class="description">Ofrecemos todas las marcas de concentrados, croquetas enlatados, vitaminas y huesos.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+ {% endblock %}
+</body>
+
+</html>
+{% endblock %}
